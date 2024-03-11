@@ -1,0 +1,20 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "fe2cfbb32f0b7b5f72cdf736f49563f3"
+name = "testing-all-in-one"
+application_url = "https://testing-all-in-one--development.gadget.app/api/shopify/install-or-render"
+embedded = true
+
+[build]
+dev_store_url = "devaoc-test-store.myshopify.com"
+
+[auth]
+redirect_urls = [
+  "https://testing-all-in-one--development.gadget.app/api/connections/auth/shopify/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
